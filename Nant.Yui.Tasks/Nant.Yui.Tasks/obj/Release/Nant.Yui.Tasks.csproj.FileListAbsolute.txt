@@ -1,0 +1,10 @@
+C:\Users\krousseau\Documents\Visual Studio 2010\Projects\Nant.Yui.Tasks\Nant.Yui.Tasks\bin\Release\Nant.Yui.Tasks.dll
+C:\Users\krousseau\Documents\Visual Studio 2010\Projects\Nant.Yui.Tasks\Nant.Yui.Tasks\bin\Release\Nant.Yui.Tasks.pdb
+C:\Users\krousseau\Documents\Visual Studio 2010\Projects\Nant.Yui.Tasks\Nant.Yui.Tasks\bin\Release\NAnt.Core.dll
+C:\Users\krousseau\Documents\Visual Studio 2010\Projects\Nant.Yui.Tasks\Nant.Yui.Tasks\bin\Release\Yahoo.Yui.Compressor.dll
+C:\Users\krousseau\Documents\Visual Studio 2010\Projects\Nant.Yui.Tasks\Nant.Yui.Tasks\bin\Release\log4net.dll
+C:\Users\krousseau\Documents\Visual Studio 2010\Projects\Nant.Yui.Tasks\Nant.Yui.Tasks\bin\Release\EcmaScript.NET.modified.dll
+C:\Users\krousseau\Documents\Visual Studio 2010\Projects\Nant.Yui.Tasks\Nant.Yui.Tasks\bin\Release\NAnt.Core.xml
+C:\Users\krousseau\Documents\Visual Studio 2010\Projects\Nant.Yui.Tasks\Nant.Yui.Tasks\obj\Release\ResolveAssemblyReference.cache
+C:\Users\krousseau\Documents\Visual Studio 2010\Projects\Nant.Yui.Tasks\Nant.Yui.Tasks\obj\Release\Nant.Yui.Tasks.dll
+C:\Users\krousseau\Documents\Visual Studio 2010\Projects\Nant.Yui.Tasks\Nant.Yui.Tasks\obj\Release\Nant.Yui.Tasks.pdb

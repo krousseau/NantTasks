@@ -1,0 +1,53 @@
+<project name="Test" default="run">
+
+
+
+<target name="build" description="Compile Web Site.">
+  <exec basedir="."
+  program="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe"
+  commandline="C:\Code\Phoenix\Phoenix.Administration\Communispace.Administration.Web\Communispace.Administration.Web.csproj /nologo 
+  /t:Rebuild
+  /t:ResolveReferences;_CopyWebApplication
+  /p:OutDir=C:\Code\Deploy\bin\
+  /p:WebProjectOutputDir=C:\Code\Deploy\"
+  workingdir="."
+  failonerror="true" />
+</target>
+
+<property name="js_dir" value="C:\Code\Deploy\Public\javascript\" />
+<target name="js-compress" description="Compile Web Site.">
+	<yuicompressor basedir="${js_dir}" combine="true" combinedfile="master.js"> 
+		<fileset basedir="${js_dir}/Debug">
+			<include asis="true" name="lib/jquery.blockUI.js" />
+			<include asis="true" name="lib/xVal.jquery.validate.js" />
+			<include asis="true" name="lib/jquery.undoable.js" />
+			<include asis="true" name="lib/jquery.dirtyform.js" />
+			<include asis="true" name="CommunispaceCommon.js" />
+		</fileset>
+	</yuicompressor> 
+	<yuicompressor basedir="${js_dir}"> 
+		<fileset basedir="${js_dir}/Debug">
+			<exclude name="lib/*" />
+			<include name="*/*.js" />
+		</fileset>
+	</yuicompressor> 
+</target>
+
+<property name="css_dir" value="C:\Code\Deploy\Public\css\" />
+<target name="css-compress" description="Compile Web Site.">
+	<yuicompressor basedir="${css_dir}" combine="true" combinedfile="master.css"> 
+		<fileset basedir="${css_dir}/Debug">
+			<include asis="true" name="layout.css" />
+			<include asis="true" name="activity.css" />
+			<include asis="true" name="breadcrumbs.css" />
+			<include asis="true" name="header.css" />
+			<include asis="true" name="lists.css" />
+			<include asis="true" name="forms.css" />
+		</fileset>
+	</yuicompressor> 
+</target>
+
+<target name="run" depends="build, js-compress, css-compress">
+</target>
+
+</project>
